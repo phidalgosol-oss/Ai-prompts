@@ -1,0 +1,11 @@
+{
+  "name": "pretzelita-instagram-pipeline",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "render": "node 2026-08-15_instagram_render_v1.mjs"
+  },
+  "dependencies": {
+    "playwright": "^1.62.1"
+  }
+}

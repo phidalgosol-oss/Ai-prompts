@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<title>Pretzelita — Instagram cover template v1</title>
+<style>
+  /* ============================================================
+     PROVISIONAL PALETTE — placeholders, NOT the Pretzelita brand.
+     The Pretzelita visual identity is an open [FILL] item in the
+     strategy brief. Replace these tokens when it is locked; touch
+     nothing below the token block.
+     ============================================================ */
+  :root {
+    --bg:        #F6E7CE;  /* provisional: warm cream */
+    --ink:       #2B1D12;  /* provisional: dark brown */
+    --accent:    #C96F2B;  /* provisional: pretzel brown-orange */
+    --accent-2:  #7A9E7E;  /* provisional: soft green */
+    --paper:     #FFFDF7;  /* provisional: card white */
+
+    --pad: 72px;
+    --radius: 36px;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  /* Canvas: 1080×1350 = Instagram 4:5 portrait */
+  body {
+    width: 1080px;
+    height: 1350px;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: "Avenir Next", "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+    overflow: hidden;
+  }
+
+  .frame {
+    width: 100%; height: 100%;
+    padding: var(--pad);
+    display: flex;
+    flex-direction: column;
+  }
+
+  .kicker {
+    font-size: 40px;
+    font-weight: 700;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--accent);
+  }
+
+  .art {
+    flex: 1;
+    margin: 48px 0;
+    border-radius: var(--radius);
+    background: var(--paper);
+    border: 6px solid var(--ink);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+  }
+  .art img {
+    width: 100%; height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+  .art .placeholder {
+    font-size: 44px;
+    font-weight: 600;
+    color: var(--accent-2);
+    text-align: center;
+    padding: 60px;
+  }
+
+  .title {
+    font-size: 96px;
+    line-height: 1.05;
+    font-weight: 800;
+    letter-spacing: -0.01em;
+    max-width: 18ch;
+  }
+
+  .footer {
+    margin-top: 44px;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    font-size: 36px;
+    font-weight: 600;
+  }
+  .footer .episode { color: var(--accent); }
+  .footer .handle  { color: var(--ink); opacity: 0.55; }
+</style>
+</head>
+<body>
+  <div class="frame">
+    <div class="kicker" data-field="kicker">EPISODIO</div>
+
+    <div class="art" id="art">
+      <div class="placeholder">arte de photos/ va aquí</div>
+    </div>
+
+    <h1 class="title" data-field="title">Título del episodio</h1>
+
+    <div class="footer">
+      <span class="episode" data-field="episode">EP. 001</span>
+      <span class="handle" data-field="handle">@pretzelita</span>
+    </div>
+  </div>
+
+<script>
+  // Fill fields from URL params so the template works in a plain
+  // browser AND from the render script:
+  //   file://.../cover-template.html?kicker=EPISODIO&title=...&episode=EP.%20003&img=photos/foo.png
+  const q = new URLSearchParams(location.search);
+  for (const el of document.querySelectorAll("[data-field]")) {
+    const v = q.get(el.dataset.field);
+    if (v) el.textContent = v;
+  }
+  const img = q.get("img");
+  if (img) {
+    const art = document.getElementById("art");
+    art.innerHTML = "";
+    const tag = document.createElement("img");
+    tag.src = img;
+    art.appendChild(tag);
+  }
+</script>
+</body>
+</html>
