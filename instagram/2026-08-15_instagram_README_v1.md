@@ -1,6 +1,6 @@
 # @prihisol Instagram Pipeline — README v1
 
-A batch content pipeline for **@prihisol** — Priscilla Hidalgo's professional brand (AI strategist ◦ anthropologist ◦ coach) on Instagram. One weekly Claude Code session produces the week's captions and rendered covers; publishing stays manual.
+A batch content pipeline for **@prihisol** — Priscilla as a person: whimsical, nostalgic, bilingual, culture, family, humor, Latina power. One weekly Claude Code session drafts the week's captions, reel beat sheets, and covers; you pick, film, and post.
 
 ## Setup (once)
 
@@ -12,48 +12,46 @@ npm i && npx playwright install chromium
 claude
 ```
 
-Drop your photographs (talks, work moments, travel) into `photos/`.
+Drop your personal pictures — travel, family, the Camino, you being you — into `photos/`.
 
 ## Folder map
 
 | Path | What it is |
 |---|---|
-| `2026-08-15_instagram_strategy-brief_v2.md` | Doctrine. Read first, every session. |
-| `2026-08-15_instagram_caption-skeleton_v1.md` | The one caption structure — your voice, Instagram length. |
-| `2026-08-15_instagram_cover-template_v1.html` | 1080×1350 editorial cover (green anchor confirmed; fonts to sync with your site's tokens.css). |
-| `2026-08-15_instagram_posts_v1.csv` | Single source of truth for post state. |
+| `2026-08-15_instagram_strategy-brief_v2.md` | Doctrine — includes the canonical Camino caption (§2, the voice) and the story bank (§7). |
+| `2026-08-15_instagram_caption-skeleton_v1.md` | The one caption structure: VERDAD → VIDA → MAGIA → ✨ → EN mirror. Two registers: nostálgico, cómico. |
+| `2026-08-15_instagram_cover-template_v1.html` | 1080×1350 photo-forward cover — whimsical-warm, your photo as the hero. |
+| `2026-08-15_instagram_posts_v1.csv` | Single source of truth for post state (photo & reel). |
 | `2026-08-15_instagram_render_v1.mjs` | CSV → PNG covers via Playwright (`npm run render`). |
 | `.claude/agents/` | The five pipeline agents. |
-| `photos/` | Your photographs (input). |
-| `drafts/` | Captions, one file per post (generated). |
+| `photos/` | Your pictures (input). |
+| `drafts/` | Captions + reel beat sheets (generated). |
 | `renders/` | Cover PNGs (generated, not committed). |
 
 ## The weekly session
 
 In `claude`, say: **"Run the Instagram pipeline for next week."**
 
-The pipeline runs in this order:
-
-1. **instagram-orchestrator** reads the CSV/drafts/renders and returns a work order (surfacing any open brief items blocked on you).
-2. **brand-strategy** validates each idea: discovery only (never a checkout), DxVida as evidence not promotion, no course selling, real attributed research only, nothing that requires you on camera.
-3. **story-writer** writes each caption into `drafts/` in YOUR voice per the skeleton — it reads the voice profile first, supports blends ("40% my voice, 40% Omdia, 20% empathy"), and returns two hook options for you to pick.
-4. **visual-director** builds each cover — type card (hook set large in serif green) or photo card (your photo + title) — and renders:
+1. **instagram-orchestrator** reads everything and returns a work order (surfacing anything blocked on you — e.g., story-bank material to approve).
+2. **brand-strategy** runs each idea through the Camino test: would it sit next to your canonical reel? No selling, no LinkedIn leakage, no influencer formula, true stories only.
+3. **story-writer** writes each caption ES-first with the ✨ divider and EN mirror — and for reels, a beat sheet (shots, on-screen text, voiceover lines, music mood). New personal/family material arrives as `PROPUESTA:` blocks for your yes/no.
+4. **visual-director** picks the photo with life in it from `photos/` (or lists exactly what to film for a reel) and renders the cover:
    ```bash
    npm run render                 # all pending
    npm run render -- --post 001   # one post
    ```
-5. **digital-ops** verifies everything and gives you the publish checklist.
+5. **digital-ops** verifies everything and hands you the publish checklist.
 
-You then: pick hooks, approve captions (that's what flips `caption_status` to `approved`), and post manually with the checklist.
+You then: choose titles, approve captions and PROPUESTAs, film reels from the beat sheets, and post manually.
 
 ## Rules the whole pipeline enforces
 
-- @prihisol = **discovery for the professional brand**. Never a checkout, never a price, never course sales or DxVida promotion.
-- Every CTA points to the **owned asset** (link in bio → your site/email list). Rented reach feeds owned audience.
-- **Visibility dosing:** your photos and your voice, yes; an on-camera habit, never required.
-- **Evidence habit:** every statistic real and attributed, `[VERIFY]` flags resolved before publishing.
-- **Consistency beats format:** 1 post/week floor, 2/week target, max one mental-movie post per week.
+- **Nothing is for sale here, ever.** No course, no DxVida, no products. Rare link-outs go quietly to your own site/email list.
+- **Spanish first, always bilingual** — ES → ✨✨✨ → EN mirror.
+- **True stories only** — personal and family facts come from the story bank; everything new needs your yes.
+- **No LinkedIn leakage, no influencer formula.** Whimsical, human, real life.
+- **Consistency beats format:** 1 post/week floor, 2/week target — and it has to stay fun.
 
 ## Open items before full production (brief §9)
 
-Language policy (EN vs bilingual), pillar approval, exact link-in-bio page, font sync with tokens.css, bio copy, and updating the monetization skill's Instagram rule (it currently says Pretzelita-only). The orchestrator will keep surfacing these until they're settled.
+Pillar approval, story-bank seeding (10–15 true stories), cover-look sign-off (fonts/palette), link-in-bio page, monetization-skill update. The orchestrator will keep surfacing these until they're settled.

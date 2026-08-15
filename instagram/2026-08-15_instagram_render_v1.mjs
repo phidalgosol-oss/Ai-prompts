@@ -85,7 +85,8 @@ for (const p of posts) {
   const params = new URLSearchParams();
   if (p.kicker) params.set("kicker", p.kicker);
   params.set("title", p.title);
-  if (p.img) params.set("img", p.img); // path relative to this folder, e.g. photos/berlin-talk.jpg
+  if (p.img) params.set("img", p.img); // path relative to this folder, e.g. photos/camino.jpg
+  else params.set("noart", "1");       // no photo yet -> type-only card (draft preview)
 
   const url = pathToFileURL(TEMPLATE_PATH).href + "?" + params.toString();
   await page.goto(url, { waitUntil: "networkidle" });

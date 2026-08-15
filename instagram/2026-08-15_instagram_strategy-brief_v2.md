@@ -1,83 +1,88 @@
 # Instagram Strategy Brief — @prihisol
 
-**Version:** v2 (reworked 2026-08-15: this account is the PROFESSIONAL brand, not Pretzelita)
-**Brand:** Priscilla Hidalgo — AI strategist ◦ anthropologist ◦ coach. The professional identity only.
+**Version:** v2 (reworked 2026-08-15: @prihisol is Priscilla the PERSON — whimsical, human, real life)
 **Owner:** Priscilla Hidalgo
-
-> **Doctrine note (flagged, not hidden):** the monetization playbook currently says "Instagram: discovery for Pretzelita only." @prihisol supersedes or extends that rule — a second Instagram lane now exists. Update the monetization skill to reflect it, and decide what this lane displaces: it must come out of some other hour, not stack on top.
 
 ---
 
-## 1. Why this account exists (the one job)
+## 1. What this account is
 
-Instagram is **rented reach**. @prihisol's job is **discovery for the professional brand**: reaching people — especially Spanish-and-English-speaking professionals outside her LinkedIn orbit — who would value her take on AI, work, and the human side of technology.
+@prihisol is not a content channel wearing Priscilla's name. It is **Priscilla herself, off duty**: the funny, beautiful, nostalgic, Costa Rican, country-hopping human being — culture, family, real life, Latina power. LinkedIn gets the strategist; Instagram gets the person.
 
-Non-negotiables inherited from the channel doctrine:
+Its job in the bigger system is still **discovery on a rented channel** — new people meet her here as a human before they ever meet her work — but the posts themselves are not "content marketing." They are her life, told beautifully. Most posts have no CTA at all.
 
-1. **Never a checkout.** No prices, no offers, no "enroll now." Instagram is the top of the funnel, never the till.
-2. **Every funnel terminates in an owned asset.** The only standing CTA is the link in bio → her website / email list. Rented reach feeds owned audience.
-3. **Discovery metrics only.** Saves, shares, profile visits, link clicks. Follower count is reported, never optimized for.
+Inherited channel rules (quietly, in the background):
 
-## 2. Identity guardrails
+1. **Never a checkout.** No prices, offers, or selling of any kind — not the course, not DxVida, not products.
+2. **When a post does link out, it points to an owned asset** (link in bio → her site/email list). That's rare here, and always quiet.
+3. **Metrics are read monthly, never chased daily.** Saves, shares, and the honest question: *does this account still feel like me?*
 
-- **This is the professional brand.** Same person, same voice DNA as her LinkedIn — warm, evidence-grounded, anthropologist's eye — adapted to Instagram's shorter, more visual rhythm.
-- **Visibility dosing (she is uncomfortable on camera — respect it, don't fix it):** the minimum viable dose is **one good photograph and her voice**. Photo posts from `photos/` are fine; a video habit is NOT required and never planned as a dependency. Consistency beats format.
-- **DxVida may appear as evidence, never promotion** — lived proof of her AI pivot ("I build agents, I don't just advise on them"). No pitching, no product details, no links.
-- **The course is not sold here.** Course-adjacent themes (AI applied to real work) are on-brand as insight; sales copy is not. If a post's honest purpose is enrollment, it belongs to the course brand's own channels.
-- **Pretzelita stays in her own lane.** If a Pretzelita account exists, no cross-posting between the identities.
-- **Evidence habit:** research is cited and attributed (MIT, BCG, McKinsey, Gartner, IDC…). Never an invented number. Time-sensitive stats get a freshness check before publishing.
+## 2. The voice (canonical example — this is the calibration text)
 
-## 3. Audience & language
+Her Camino de Santiago reel caption IS the voice. Every writer (human or agent) reads it before drafting:
 
-- **Working assumption (confirm):** professionals thinking about AI and their work — managers, partnerships/CS people, women in tech, DACH–LATAM crossers — who live on Instagram more than LinkedIn.
-- **Language: [FILL — decide].** Her professional writing is English; her doctrine notes Spanish lanes are less crowded and higher-return. Options: English-first with occasional Spanish, or bilingual captions (short EN + ES). Until decided, drafts are English-first and flag the choice.
+> *Todos en esta vida necesitamos movernos—de relaciones, de trabajos, de lugares que nos quedan pequeños, incluso de la silla donde trabajamos. Durante años, me he movido de país en país, y 2024 no fue la excepción. Y como siempre que algo trascendental ocurre en mi vida, busqué una manera de integrarlo, de darle sentido. Esta vez, ese camino me llevó al Camino de Santiago.*
+>
+> *La magia del Camino está en lo mucho que refleja la vida. Al final, todo lo que tenemos que hacer es decidir movernos, dar el primer paso y confiar en que el camino se irá abriendo, mostrándonos que la verdadera magia está en cada paso que damos.*
+>
+> ✨✨✨✨✨✨✨✨✨✨✨✨
+>
+> *We all need to move in this life—move on from relationships, jobs, places that no longer fit us, even the chair we work from. …the real magic is in every step we take.*
 
-## 4. Content pillars (proposed — confirm before treating as canon)
+What that text establishes as canon:
 
-> Drawn from her documented core themes. Approve, edit, or replace; then remove this note.
+- **Bilingual, Spanish first.** Full Spanish text → a ✨ divider line → the English mirror (an equivalent retelling, not a literal translation).
+- **Personal-universal arc:** opens on a universal human truth ("Todos en esta vida necesitamos movernos"), grounds it in her real life (years of moving countries, 2024, the Camino), closes on quiet magic — a reflective landing line, never a lesson-with-citations.
+- **Register:** lyrical, warm, unhurried. Whimsical and a little magical (la magia, el camino que se abre). No research bullets, no frameworks, no LinkedIn devices. Humor is welcome — she is a funny person — but hype never is.
+- **"Pura vida" is identity, not a sign-off gimmick** — on THIS account it may appear naturally, because this is the account where she is Costa Rican first.
 
-1. **La idea / The idea** — one sharp insight per post from her recurring opinions: "AI on a broken process is just a faster broken process," automation stops where humans differentiate, memory agents, CRM-as-Frankenstein. Cover-card format.
-2. **Mental movie, mini** — her trademark device at Instagram length: a moment from her career rewritten with AI agents, 4–6 beats. At most one per week; the device loses power if it's every post.
-3. **The anthropologist's eye** — culture, trust, and power in tech; DACH vs LATAM contrasts done with affection; transformation is human before it is technical.
-4. **The human thread** — fairness in automation, women in leadership, the topics that "kill reach" on purpose. She posts these deliberately; the algorithm doesn't get a veto.
+## 3. Content pillars (proposed from her own words — confirm, then remove this note)
+
+1. **Movimiento & nostalgia** — migration, life chapters, the Camino, places that no longer fit, places that finally do. Reels lean here: nostalgic footage, reflective voiceover.
+2. **Cultura & familia** — Costa Rica, family stories, traditions, food, the grandmother-tongue of everyday rituals; DACH/Europe seen through Latina eyes, with affection and comedy.
+3. **La Priscilla real** — funny, beautiful, imperfect: the everyday absurdities, self-deprecating humor, real life without filter-perfection.
+4. **Latina power** — pride, presence, the exotic-and-owning-it energy of her personal photos; women who take up space. Celebration, not lecture.
+
+## 4. Formats
+
+- **Reels (the heart of the account):** nostalgic, culture- and family-focused, personal footage with reflective bilingual captions in the canonical structure. The pipeline produces: caption + beat sheet (shots, on-screen text, voiceover lines, music mood) + cover card. She films/assembles; nothing is planned that requires footage she doesn't have.
+- **Photo posts:** her personal pictures — exotic, beautiful, Latina power — with a caption in the canonical structure (short version allowed: one reflection, ✨, mirror).
+- **Cover cards:** rendered from `2026-08-15_instagram_cover-template_v1.html` (1080×1350) — photo-forward, whimsical-warm, her picture carrying the frame.
 
 ## 5. Cadence — consistency beats format
 
-- **Floor:** 1 post per week. **Target:** 2 per week once the batch pipeline is routine.
-- **Batching:** one weekly session produces the week's captions and covers via the agent pipeline (see README).
-- Stories are optional amplification of feed posts. Reels/voice formats only if she chooses them — never required by the plan.
+- **Floor:** 1 post per week. **Target:** 2 per week (e.g., one reel + one photo post).
+- **Batching:** one weekly session drafts captions, beat sheets, and covers; she picks, films, and posts.
+- Nothing is ever planned that she wouldn't still enjoy making in three months. If a format starts feeling like a job, it gets cut — this account must stay fun or it dies.
 
-## 6. Formats
+## 6. Identity guardrails
 
-- **Cover cards:** 1080×1350 (4:5) rendered from `2026-08-15_instagram_cover-template_v1.html` — editorial, deep-forest-green anchor, generous whitespace. The card carries the hook; the caption carries the substance.
-- **Photo posts:** a good photograph from `photos/` + insight caption. This is the "minimum viable dose" of visibility.
-- **Carousels (later):** an insight broken into 3–5 cards from the same template. Only after the weekly floor has held for 6+ weeks.
+- **No LinkedIn leakage.** No research citations, no → arrow bullets, no frameworks, no industry takes. If a draft would survive on LinkedIn unchanged, it's wrong for here.
+- **No selling, ever.** The course, DxVida, digital products — none of them are pitched here. This account earns trust by wanting nothing.
+- **Real life only.** Real stories, real family, real places. No manufactured "relatable moments," no fabricated family anecdotes — the story bank (§7) holds what's true and approved.
+- **Her beauty and humor are on-brand.** This is the account where she IS the picture. Confidence and playfulness welcome; influencer-formula aesthetics (hook formulas, "wait for it", engagement bait) are not.
 
-## 7. The funnel
+## 7. Story bank ([FILL] — grows over time, agents draw only from here for personal facts)
+
+Approved true material to build from:
+- Years of moving country to country; 2024 → the Camino de Santiago (the canonical reel).
+- Costa Rica: her grandfather building an electric plant on a mountain — approved story.
+- [FILL] — family stories, childhood rituals, food, places, recurring characters (mamá, abuela…?) as Priscilla approves them. Agents may PROPOSE story ideas, but only stories she confirms enter the bank.
+
+## 8. The quiet funnel
 
 ```
-Instagram post (discovery)
+Reel/post (a stranger feels something)
    → profile visit
-   → link in bio (owned: https://priscillahidalgo.netlify.app/ — confirm exact landing page)
-   → email list signup
+   → occasionally: link in bio → her site / email list (owned)
 ```
 
-Nothing on Instagram asks for money. The email list is the only algorithm-free channel; that's where the relationship lives.
-
-## 8. Metrics that matter (review monthly, not daily)
-
-| Metric | Why it counts |
-|---|---|
-| Saves + shares per post | Discovery signals — is the insight worth keeping? |
-| Profile visits | Post → person interest |
-| Link-in-bio clicks | The only number connected to an owned asset |
-| Weekly posting streak | Consistency is the strategy |
+That's it. No hard CTAs. The account's power is that it isn't asking for anything.
 
 ## 9. Open items ([FILL] before they block work)
 
-- [ ] Language policy (§3): English-first vs bilingual captions
-- [ ] Pillars approved (§4)
-- [ ] Exact link-in-bio landing page (a page worth landing on — not the homepage if a better capture page exists)
-- [ ] Cover template fonts synced with `src/styles/tokens.css` from the website repo (template ships with the confirmed green anchor + flagged font placeholders)
-- [ ] Instagram bio copy for @prihisol
-- [ ] Monetization skill updated with the new Instagram rule (see doctrine note above)
+- [ ] Pillars approved (§3)
+- [ ] Story bank seeded with 10–15 approved true stories (§7)
+- [ ] Cover template look signed off (whimsical-warm direction; fonts still to sync/choose — see template header)
+- [ ] Link-in-bio destination (owned page)
+- [ ] Update the monetization skill's Instagram entry to reflect @prihisol's role

@@ -1,25 +1,23 @@
 <!doctype html>
-<html lang="en">
+<html lang="es">
 <head>
 <meta charset="utf-8">
 <title>@prihisol — Instagram cover template v1</title>
 <style>
   /* ============================================================
-     BRAND TOKENS — anchor green #1B4D3E is confirmed brand canon.
-     The other values are placeholders to SYNC with the website's
-     src/styles/tokens.css (fonts especially — see brief §9).
-     Never add off-palette colors; propose a token instead.
+     PALETTE — whimsical-warm direction for the PERSONAL account.
+     Green #1B4D3E carries over from her confirmed palette; the
+     rest are provisional until she signs off the look (brief §9).
+     Fonts are placeholders — [FILL] with her chosen faces.
      ============================================================ */
   :root {
-    --brand:      #1B4D3E;  /* CONFIRMED: deep forest green anchor */
-    --paper:      #F5F1E8;  /* sync w/ tokens.css: warm calm neutral, never #fff */
-    --ink:        #23271F;  /* sync w/ tokens.css: warm near-black, never #000 */
-    --muted:      #6E7268;  /* sync w/ tokens.css */
+    --paper:  #F7F2E7;  /* warm cream, provisional */
+    --ink:    #2A2A24;  /* warm near-black, provisional */
+    --verde:  #1B4D3E;  /* her confirmed deep forest green */
+    --sol:    #C9973B;  /* warm gold for sparkle accents, provisional */
 
-    --font-head:  Georgia, "Times New Roman", serif;          /* [FILL] sync w/ tokens.css */
-    --font-body:  "Avenir Next", "Segoe UI", Arial, sans-serif; /* [FILL] sync w/ tokens.css */
-
-    --pad: 96px;
+    --font-title: Georgia, "Times New Roman", serif;            /* [FILL] */
+    --font-small: "Avenir Next", "Segoe UI", Arial, sans-serif; /* [FILL] */
   }
 
   * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -30,45 +28,50 @@
     height: 1350px;
     background: var(--paper);
     color: var(--ink);
-    font-family: var(--font-body);
+    font-family: var(--font-small);
     overflow: hidden;
   }
 
   .frame {
     width: 100%; height: 100%;
-    padding: var(--pad);
+    padding: 64px 64px 72px;
     display: flex;
     flex-direction: column;
-    box-shadow: inset 0 0 0 2px var(--brand);
   }
 
   .kicker {
     display: flex;
-    align-items: center;
-    gap: 24px;
-    font-size: 30px;
+    align-items: baseline;
+    gap: 20px;
+    font-size: 28px;
     font-weight: 600;
-    letter-spacing: 0.22em;
+    letter-spacing: 0.2em;
     text-transform: uppercase;
-    color: var(--brand);
+    color: var(--verde);
   }
-  .kicker::after {
-    content: "";
-    flex: 1;
-    height: 2px;
-    background: var(--brand);
-    opacity: 0.35;
-  }
+  .kicker .spark { color: var(--sol); letter-spacing: 0; font-size: 30px; }
 
-  /* Optional photo block — hidden unless ?img= is provided */
+  /* The photo is the hero — nostalgic print feel: cream mat, soft shadow */
   .art {
-    display: none;
-    height: 460px;
-    margin-top: 56px;
+    margin-top: 44px;
+    height: 780px;
+    background: var(--verde);
+    box-shadow: 0 18px 50px rgba(42, 42, 36, 0.18);
     overflow: hidden;
   }
   .art img { width: 100%; height: 100%; object-fit: cover; display: block; }
-  body.has-art .art { display: block; }
+  .art .placeholder {
+    width: 100%; height: 100%;
+    display: flex; align-items: center; justify-content: center;
+    color: var(--paper);
+    font-size: 38px;
+    font-style: italic;
+    font-family: var(--font-title);
+  }
+
+  /* Without a photo the title carries the card (rare on this account) */
+  body.no-art .art { display: none; }
+  body.no-art .title { font-size: 88px; }
 
   .title-wrap {
     flex: 1;
@@ -76,37 +79,42 @@
     align-items: center;
   }
   .title {
-    font-family: var(--font-head);
-    font-size: 92px;
-    line-height: 1.16;
+    font-family: var(--font-title);
+    font-style: italic;
+    font-size: 64px;
+    line-height: 1.22;
     font-weight: 400;
-    color: var(--brand);
-    max-width: 15ch;
+    color: var(--verde);
+    max-width: 20ch;
   }
-  body.has-art .title { font-size: 68px; }
 
   .footer {
     display: flex;
     justify-content: space-between;
     align-items: baseline;
-    font-size: 30px;
+    font-size: 28px;
   }
-  .footer .name   { font-weight: 600; color: var(--ink); }
-  .footer .handle { color: var(--muted); letter-spacing: 0.04em; }
+  .footer .spark  { color: var(--sol); }
+  .footer .handle { color: var(--ink); opacity: 0.55; letter-spacing: 0.04em; }
 </style>
 </head>
 <body>
   <div class="frame">
-    <div class="kicker" data-field="kicker">The idea</div>
+    <div class="kicker">
+      <span class="spark">✨</span>
+      <span data-field="kicker">Movimiento &amp; nostalgia</span>
+    </div>
 
-    <div class="art" id="art"></div>
+    <div class="art" id="art">
+      <div class="placeholder">tu foto va aquí</div>
+    </div>
 
     <div class="title-wrap">
-      <h1 class="title" data-field="title">AI on a broken process is just a faster broken process.</h1>
+      <h1 class="title" data-field="title">La verdadera magia está en cada paso.</h1>
     </div>
 
     <div class="footer">
-      <span class="name" data-field="name">Priscilla Hidalgo</span>
+      <span class="spark">✨✨✨</span>
       <span class="handle" data-field="handle">@prihisol</span>
     </div>
   </div>
@@ -114,7 +122,7 @@
 <script>
   // Fill fields from URL params so the template works in a plain
   // browser AND from the render script:
-  //   file://.../cover-template.html?kicker=The%20idea&title=...&img=photos/foo.jpg
+  //   file://.../cover-template.html?kicker=Cultura&title=...&img=photos/camino.jpg
   const q = new URLSearchParams(location.search);
   for (const el of document.querySelectorAll("[data-field]")) {
     const v = q.get(el.dataset.field);
@@ -122,10 +130,13 @@
   }
   const img = q.get("img");
   if (img) {
-    document.body.classList.add("has-art");
+    const art = document.getElementById("art");
+    art.innerHTML = "";
     const tag = document.createElement("img");
     tag.src = img;
-    document.getElementById("art").appendChild(tag);
+    art.appendChild(tag);
+  } else if (q.get("noart") === "1") {
+    document.body.classList.add("no-art");
   }
 </script>
 </body>

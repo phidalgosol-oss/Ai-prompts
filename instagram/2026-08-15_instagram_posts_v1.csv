@@ -1,4 +1,4 @@
-post_id,publish_date,pillar,kicker,title,img,caption_file,caption_status,render_status,notes
-001,2026-08-24,la-idea,The idea,AI on a broken process is just a faster broken process.,,drafts/2026-08-24_001_caption_v1.md,draft,pending,"Structure demo from the caption skeleton — review before treating as publishable"
-002,2026-08-31,mental-movie,Mental movie,,,,idea,pending,"One mental-movie post max per week"
-003,2026-09-07,anthropologist,The anthropologist's eye,,,,idea,pending,"Pillar names pending approval — see strategy brief §4"
+post_id,publish_date,pillar,format,kicker,title,img,caption_file,caption_status,render_status,notes
+001,2026-08-24,la-priscilla-real,photo,La Priscilla real,El sazón no se negocia.,,drafts/2026-08-24_001_caption_v1.md,draft,pending,"Cómico register demo from the skeleton — needs her photo + her approval"
+002,2026-08-31,movimiento-nostalgia,reel,Movimiento & nostalgia,,,,idea,pending,"Nostalgic reel — needs a story from the story bank (brief §7)"
+003,2026-09-07,cultura-familia,photo,Cultura & familia,,,,idea,pending,"Pillar names pending approval — see strategy brief §3"

@@ -1,70 +1,82 @@
-# Caption Skeleton — @prihisol (professional brand)
+# Caption Skeleton — @prihisol
 
-One structure, every caption. It is her LinkedIn voice compressed for Instagram: shorter, same DNA. English-first until the language policy in the brief §3 is decided.
+One structure, every caption — modeled directly on the canonical Camino reel caption (strategy brief §2). Read that text before writing; this file only names its parts.
 
 ---
 
-## The skeleton
+## The skeleton (bilingual, Spanish first — always)
 
 ```
-[HOOK — first line, ≤125 characters]
-Visible before "more". Her register, not a hook formula: a short punchy
-fragment, a confession, or the sharp version of the idea.
-("Ten years ago my job was cloud." / "Gone. The headache is gone.")
+[VERDAD — opening line, ES]
+A universal human truth, stated warmly, that the reader feels in their
+own life before they know anything about hers.
+("Todos en esta vida necesitamos movernos—de relaciones, de trabajos,
+de lugares que nos quedan pequeños, incluso de la silla donde trabajamos.")
 
-[STORY → INSIGHT — 3 to 8 short lines]
-One concrete moment or observation → the professional lesson.
-Her rhythm: short fragments, line breaks between beats, an honest aside
-allowed ("Lol", "I'm not a saint... I'm just trying").
-Instagram length: half a LinkedIn post, not a whole one.
+[VIDA — 2 to 5 sentences, ES]
+Her real life grounding the truth: the years, the countries, the family,
+the specific moment. True stories only — drawn from the story bank
+(brief §7) or proposed to her, never invented.
 
-[EVIDENCE — optional, 1 to 3 arrow bullets]
-→ Only real, attributed research (MIT, BCG, McKinsey, Gartner, IDC…).
-Never an invented number. Skip entirely when the post is story-led.
+[MAGIA — landing line, ES]
+The quiet reflective close. A little magic is allowed — el camino que
+se abre, la magia de cada paso. Never a lesson, never a citation,
+never a question-formula. Humor can land here too when the post is funny.
 
-[CLOSE — one line]
-A reflective one-liner or ONE open question. Never a salesy CTA.
-("The end?" / "You decide." / "Sounds familiar?")
-When the post links out: one quiet line toward the owned asset
-("the longer version lives at the link in bio") — most posts don't.
+✨✨✨✨✨✨✨✨✨✨✨✨          [THE DIVIDER — always this, always sparkles]
 
-[HASHTAGS — 3 to 5, after one blank line]
-Instagram needs a few for discovery even though her style is nearly
-hashtag-free. Small and specific, no #ai #tech #motivation soup.
+[MIRROR — EN]
+The English retelling: same arc, same warmth, equivalent — not a
+word-for-word translation. It should read as if she wrote it fresh
+for an English-speaking friend.
 
-[ALT — image alt text, one sentence]
-What is literally in the image, plain language, written for a person
-using a screen reader — not for the algorithm.
+[HASHTAGS — 0 to 5, optional, after one blank line]
+Only when they're honest (#caminodesantiago on a Camino reel). Zero is
+a valid number. Never a hashtag soup.
+
+[ALT — one sentence, ES or EN]
+What is literally in the image/video, plain language, for a person
+using a screen reader.
 ```
+
+## Two registers, one structure
+
+- **Nostálgico** — the Camino register: lyrical, unhurried, a little magical. For movement, family, culture, life chapters.
+- **Cómico** — same skeleton, but the VERDAD is a playfully honest truth and the MAGIA line is the punchline. ("Todos tenemos una tía que…") Self-deprecating, warm, never mean, never influencer-formula.
+
+Pick one register per post. Nostalgia with a wink is fine; a post that can't decide is not.
 
 ## Rules that override everything
 
-1. **Her voice, dosed for Instagram.** Signature devices welcome — mental movie (max one per week), personal story → insight, the anthropologist lens, ALL CAPS for one word, ellipses for pacing. What never appears: corporate buzzword soup, emoji-bullet listicles, hype without evidence, doom without empathy.
-2. **Never a checkout.** No prices, offers, or enrollment pushes. Only link destination: the owned site/email list.
-3. **DxVida = evidence, not promotion.** "I'm living this as a founder" is fine; features, pitches, and links are not.
-4. **One question maximum per caption.** Two questions = zero answers.
-5. **Voice blends apply.** If she directs a mix ("40% my voice, 40% Omdia, 20% empathy"), follow the voice skill's blending protocol; default is 70% her voice, 20% evidence, 10% empathy.
+1. **Spanish first, always.** The ES text is the original; the EN mirror follows the ✨ divider. A Spanish reader must never feel like they got the translation.
+2. **No LinkedIn devices.** No → arrows, no research citations, no frameworks, no "3 lessons." If it would survive on LinkedIn unchanged, rewrite it.
+3. **Nothing is for sale.** No prices, offers, courses, products, or "check my…" CTAs. When a post genuinely links out (rare), one quiet line — "el resto está en el link de la bio" — and only to the owned site/email list.
+4. **True stories only.** Personal and family facts come from the story bank. New story material is flagged `PROPUESTA:` for Priscilla — the post must still work if she says no.
+5. **"Pura vida" may appear** when it's real — identity, not garnish.
 
-## Worked example (structure demo — replace with a real post)
+## Worked example — cómico register (structure demo; approve or replace)
 
 ```
-AI on a broken process is just a faster broken process.          ← HOOK
+Nadie te prepara para ser latina en una oficina alemana.            ← VERDAD
 
-We didn't fix the intake form.
-We automated it.
-Now the wrong data arrives instantly.
-Different speed. Same Frankenstein.
-The fix was never technical. It was one honest conversation
-about who owns the process. We kept avoiding it.                  ← STORY → INSIGHT
+Yo saludo con beso. Aquí se saluda con un correo.
+Yo llego con gallo pinto en el corazón.
+El calendario llega con "sync de 15 minutos" a las 8:00.
+Sobreviví. Con playlist de Juanes y mucha, MUCHA fe.                 ← VIDA
 
-→ MIT: 95% of GenAI pilots show no P&L impact — most automate
-  around the problem instead of through it.                       ← EVIDENCE
+La integración es real… pero el sazón no se negocia.                 ← MAGIA
 
-Which broken process is your AI politely accelerating?            ← CLOSE
+✨✨✨✨✨✨✨✨✨✨✨✨
 
-#aistrategy #futureofwork #digitaltransformation                  ← HASHTAGS
+Nobody prepares you for being Latina in a German office.
+I greet with a kiss; here, greetings arrive by email.
+I show up with gallo pinto in my heart; the calendar shows up
+with an 8:00 a.m. "quick sync."
+I survived — on a Juanes playlist and a LOT of faith.
+Integration is real… but the sazón is non-negotiable.                ← MIRROR
 
-ALT: Editorial quote card on a warm cream background with the
-words "AI on a broken process is just a faster broken process"
-in deep green type.                                               ← ALT
+#latinaenalemania #puravida                                          ← HASHTAGS
+
+ALT: Priscilla riéndose en su escritorio, con una taza de café
+que dice pura vida.                                                  ← ALT
 ```
