@@ -1,24 +1,25 @@
 <!doctype html>
-<html lang="es">
+<html lang="en">
 <head>
 <meta charset="utf-8">
-<title>Pretzelita — Instagram cover template v1</title>
+<title>@prihisol — Instagram cover template v1</title>
 <style>
   /* ============================================================
-     PROVISIONAL PALETTE — placeholders, NOT the Pretzelita brand.
-     The Pretzelita visual identity is an open [FILL] item in the
-     strategy brief. Replace these tokens when it is locked; touch
-     nothing below the token block.
+     BRAND TOKENS — anchor green #1B4D3E is confirmed brand canon.
+     The other values are placeholders to SYNC with the website's
+     src/styles/tokens.css (fonts especially — see brief §9).
+     Never add off-palette colors; propose a token instead.
      ============================================================ */
   :root {
-    --bg:        #F6E7CE;  /* provisional: warm cream */
-    --ink:       #2B1D12;  /* provisional: dark brown */
-    --accent:    #C96F2B;  /* provisional: pretzel brown-orange */
-    --accent-2:  #7A9E7E;  /* provisional: soft green */
-    --paper:     #FFFDF7;  /* provisional: card white */
+    --brand:      #1B4D3E;  /* CONFIRMED: deep forest green anchor */
+    --paper:      #F5F1E8;  /* sync w/ tokens.css: warm calm neutral, never #fff */
+    --ink:        #23271F;  /* sync w/ tokens.css: warm near-black, never #000 */
+    --muted:      #6E7268;  /* sync w/ tokens.css */
 
-    --pad: 72px;
-    --radius: 36px;
+    --font-head:  Georgia, "Times New Roman", serif;          /* [FILL] sync w/ tokens.css */
+    --font-body:  "Avenir Next", "Segoe UI", Arial, sans-serif; /* [FILL] sync w/ tokens.css */
+
+    --pad: 96px;
   }
 
   * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -27,9 +28,9 @@
   body {
     width: 1080px;
     height: 1350px;
-    background: var(--bg);
+    background: var(--paper);
     color: var(--ink);
-    font-family: "Avenir Next", "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+    font-family: var(--font-body);
     overflow: hidden;
   }
 
@@ -38,80 +39,82 @@
     padding: var(--pad);
     display: flex;
     flex-direction: column;
+    box-shadow: inset 0 0 0 2px var(--brand);
   }
 
   .kicker {
-    font-size: 40px;
-    font-weight: 700;
-    letter-spacing: 0.14em;
-    text-transform: uppercase;
-    color: var(--accent);
-  }
-
-  .art {
-    flex: 1;
-    margin: 48px 0;
-    border-radius: var(--radius);
-    background: var(--paper);
-    border: 6px solid var(--ink);
     display: flex;
     align-items: center;
-    justify-content: center;
+    gap: 24px;
+    font-size: 30px;
+    font-weight: 600;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: var(--brand);
+  }
+  .kicker::after {
+    content: "";
+    flex: 1;
+    height: 2px;
+    background: var(--brand);
+    opacity: 0.35;
+  }
+
+  /* Optional photo block — hidden unless ?img= is provided */
+  .art {
+    display: none;
+    height: 460px;
+    margin-top: 56px;
     overflow: hidden;
   }
-  .art img {
-    width: 100%; height: 100%;
-    object-fit: cover;
-    display: block;
-  }
-  .art .placeholder {
-    font-size: 44px;
-    font-weight: 600;
-    color: var(--accent-2);
-    text-align: center;
-    padding: 60px;
-  }
+  .art img { width: 100%; height: 100%; object-fit: cover; display: block; }
+  body.has-art .art { display: block; }
 
-  .title {
-    font-size: 96px;
-    line-height: 1.05;
-    font-weight: 800;
-    letter-spacing: -0.01em;
-    max-width: 18ch;
+  .title-wrap {
+    flex: 1;
+    display: flex;
+    align-items: center;
   }
+  .title {
+    font-family: var(--font-head);
+    font-size: 92px;
+    line-height: 1.16;
+    font-weight: 400;
+    color: var(--brand);
+    max-width: 15ch;
+  }
+  body.has-art .title { font-size: 68px; }
 
   .footer {
-    margin-top: 44px;
     display: flex;
     justify-content: space-between;
     align-items: baseline;
-    font-size: 36px;
-    font-weight: 600;
+    font-size: 30px;
   }
-  .footer .episode { color: var(--accent); }
-  .footer .handle  { color: var(--ink); opacity: 0.55; }
+  .footer .name   { font-weight: 600; color: var(--ink); }
+  .footer .handle { color: var(--muted); letter-spacing: 0.04em; }
 </style>
 </head>
 <body>
   <div class="frame">
-    <div class="kicker" data-field="kicker">EPISODIO</div>
+    <div class="kicker" data-field="kicker">The idea</div>
 
-    <div class="art" id="art">
-      <div class="placeholder">arte de photos/ va aquí</div>
+    <div class="art" id="art"></div>
+
+    <div class="title-wrap">
+      <h1 class="title" data-field="title">AI on a broken process is just a faster broken process.</h1>
     </div>
 
-    <h1 class="title" data-field="title">Título del episodio</h1>
-
     <div class="footer">
-      <span class="episode" data-field="episode">EP. 001</span>
-      <span class="handle" data-field="handle">@pretzelita</span>
+      <span class="name" data-field="name">Priscilla Hidalgo</span>
+      <span class="handle" data-field="handle">@prihisol</span>
     </div>
   </div>
 
 <script>
   // Fill fields from URL params so the template works in a plain
   // browser AND from the render script:
-  //   file://.../cover-template.html?kicker=EPISODIO&title=...&episode=EP.%20003&img=photos/foo.png
+  //   file://.../cover-template.html?kicker=The%20idea&title=...&img=photos/foo.jpg
   const q = new URLSearchParams(location.search);
   for (const el of document.querySelectorAll("[data-field]")) {
     const v = q.get(el.dataset.field);
@@ -119,11 +122,10 @@
   }
   const img = q.get("img");
   if (img) {
-    const art = document.getElementById("art");
-    art.innerHTML = "";
+    document.body.classList.add("has-art");
     const tag = document.createElement("img");
     tag.src = img;
-    art.appendChild(tag);
+    document.getElementById("art").appendChild(tag);
   }
 </script>
 </body>

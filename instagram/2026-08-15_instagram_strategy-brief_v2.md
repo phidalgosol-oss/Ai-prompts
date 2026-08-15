@@ -1,82 +1,83 @@
-# Instagram Strategy Brief — Pretzelita
+# Instagram Strategy Brief — @prihisol
 
-**Version:** v2 (re-authored into the repo, 2026-08-15)
-**Brand:** Pretzelita — and only Pretzelita. Instagram is not a channel for the professional brand, DxVida, or the course.
+**Version:** v2 (reworked 2026-08-15: this account is the PROFESSIONAL brand, not Pretzelita)
+**Brand:** Priscilla Hidalgo — AI strategist ◦ anthropologist ◦ coach. The professional identity only.
 **Owner:** Priscilla Hidalgo
+
+> **Doctrine note (flagged, not hidden):** the monetization playbook currently says "Instagram: discovery for Pretzelita only." @prihisol supersedes or extends that rule — a second Instagram lane now exists. Update the monetization skill to reflect it, and decide what this lane displaces: it must come out of some other hour, not stack on top.
 
 ---
 
 ## 1. Why this account exists (the one job)
 
-Instagram is **rented reach**. Its only job for Pretzelita is **discovery**: putting the character in front of new people who would never find her otherwise.
+Instagram is **rented reach**. @prihisol's job is **discovery for the professional brand**: reaching people — especially Spanish-and-English-speaking professionals outside her LinkedIn orbit — who would value her take on AI, work, and the human side of technology.
 
-Three consequences, non-negotiable:
+Non-negotiables inherited from the channel doctrine:
 
-1. **Never a checkout.** No prices, no "compra aquí", no product carousels. The moment a post sells, it has left its lane.
-2. **Every funnel terminates in an owned asset.** The only CTA this account ever makes is toward something Priscilla controls: the email list or the website. "Link in bio" points there and nowhere else.
-3. **Discovery metrics only.** Success is saves, shares, profile visits, and link clicks — not follower count, not likes.
+1. **Never a checkout.** No prices, no offers, no "enroll now." Instagram is the top of the funnel, never the till.
+2. **Every funnel terminates in an owned asset.** The only standing CTA is the link in bio → her website / email list. Rented reach feeds owned audience.
+3. **Discovery metrics only.** Saves, shares, profile visits, link clicks. Follower count is reported, never optimized for.
 
-## 2. Identity guardrails (the wall around Pretzelita)
+## 2. Identity guardrails
 
-- **Pretzelita is a cartoon with a cloned voice. Fully faceless.** Priscilla never appears — no face, no hands, no "behind the scenes" of the creator. If a post needs a human, it isn't a Pretzelita post.
-- Pretzelita does **not** borrow from the other brands: no LinkedIn thought-leadership register, no Tecnoantropóloga teacher voice, no DxVida product voice, no personal-narrative devices. She is her own character with her own world.
-- **Character bible: [FILL]** — canonical design, backstory, personality traits, catchphrases. Until this is written and approved, the story-writer agent must flag any character fact it needs as a proposal, never state it as canon.
+- **This is the professional brand.** Same person, same voice DNA as her LinkedIn — warm, evidence-grounded, anthropologist's eye — adapted to Instagram's shorter, more visual rhythm.
+- **Visibility dosing (she is uncomfortable on camera — respect it, don't fix it):** the minimum viable dose is **one good photograph and her voice**. Photo posts from `photos/` are fine; a video habit is NOT required and never planned as a dependency. Consistency beats format.
+- **DxVida may appear as evidence, never promotion** — lived proof of her AI pivot ("I build agents, I don't just advise on them"). No pitching, no product details, no links.
+- **The course is not sold here.** Course-adjacent themes (AI applied to real work) are on-brand as insight; sales copy is not. If a post's honest purpose is enrollment, it belongs to the course brand's own channels.
+- **Pretzelita stays in her own lane.** If a Pretzelita account exists, no cross-posting between the identities.
+- **Evidence habit:** research is cited and attributed (MIT, BCG, McKinsey, Gartner, IDC…). Never an invented number. Time-sensitive stats get a freshness check before publishing.
 
 ## 3. Audience & language
 
-- **Spanish-first.** The Spanish-language lane is the less crowded, higher-return market. English only where it's natural inside a joke or a term.
-- **Audience: [FILL]** — to confirm with Priscilla. Working assumption for drafting: Spanish-speaking adults (LATAM + Spain) who follow character/humor accounts, reachable through relatable everyday situations.
+- **Working assumption (confirm):** professionals thinking about AI and their work — managers, partnerships/CS people, women in tech, DACH–LATAM crossers — who live on Instagram more than LinkedIn.
+- **Language: [FILL — decide].** Her professional writing is English; her doctrine notes Spanish lanes are less crowded and higher-return. Options: English-first with occasional Spanish, or bilingual captions (short EN + ES). Until decided, drafts are English-first and flag the choice.
 
 ## 4. Content pillars (proposed — confirm before treating as canon)
 
-> These are recommendations, not locked brand facts. Approve, edit, or replace; then remove this note.
+> Drawn from her documented core themes. Approve, edit, or replace; then remove this note.
 
-1. **Episodios** — short self-contained cartoon moments; Pretzelita in a relatable situation. The core format.
-2. **El mundo de Pretzelita** — recurring side characters, places, running gags. Builds the universe that makes people follow rather than just laugh once.
-3. **Detrás del dibujo (sin humanos)** — process content that stays faceless: sketches evolving, a cover being colored, voice-line bloopers. Never Priscilla.
+1. **La idea / The idea** — one sharp insight per post from her recurring opinions: "AI on a broken process is just a faster broken process," automation stops where humans differentiate, memory agents, CRM-as-Frankenstein. Cover-card format.
+2. **Mental movie, mini** — her trademark device at Instagram length: a moment from her career rewritten with AI agents, 4–6 beats. At most one per week; the device loses power if it's every post.
+3. **The anthropologist's eye** — culture, trust, and power in tech; DACH vs LATAM contrasts done with affection; transformation is human before it is technical.
+4. **The human thread** — fairness in automation, women in leadership, the topics that "kill reach" on purpose. She posts these deliberately; the algorithm doesn't get a veto.
 
 ## 5. Cadence — consistency beats format
 
-The format she will still be doing in three months beats the impressive one she abandons in three weeks.
-
-- **Floor:** 1 rendered cover post per week. This is the commitment.
-- **Target:** 2 posts per week once the batch pipeline runs smoothly.
-- **Batching:** one weekly session produces the week's captions and covers via the agent pipeline (see README). No daily creation.
-- Reels with the cloned voice are a later phase — only after the weekly floor has held for 6+ consecutive weeks.
+- **Floor:** 1 post per week. **Target:** 2 per week once the batch pipeline is routine.
+- **Batching:** one weekly session produces the week's captions and covers via the agent pipeline (see README).
+- Stories are optional amplification of feed posts. Reels/voice formats only if she chooses them — never required by the plan.
 
 ## 6. Formats
 
-- **Feed covers:** 1080×1350 (4:5), rendered from `2026-08-15_instagram_cover-template_v1.html` by the render script. One template, every post — coherence is automatic.
-- **Photos folder (`photos/`):** raw art, sketches, and reference images dropped in by Priscilla; the visual-director agent pulls from here.
-- **Stories:** optional amplification of feed posts only; no separate story-first content while the floor is 1–2 posts/week.
+- **Cover cards:** 1080×1350 (4:5) rendered from `2026-08-15_instagram_cover-template_v1.html` — editorial, deep-forest-green anchor, generous whitespace. The card carries the hook; the caption carries the substance.
+- **Photo posts:** a good photograph from `photos/` + insight caption. This is the "minimum viable dose" of visibility.
+- **Carousels (later):** an insight broken into 3–5 cards from the same template. Only after the weekly floor has held for 6+ weeks.
 
-## 7. The funnel (write it on every planning doc)
+## 7. The funnel
 
 ```
 Instagram post (discovery)
    → profile visit
-   → link in bio (owned website page: [FILL] which URL)
+   → link in bio (owned: https://priscillahidalgo.netlify.app/ — confirm exact landing page)
    → email list signup
 ```
 
-Nothing on Instagram ever asks for money. The email list is the only algorithm-free channel; it is where the relationship actually lives.
+Nothing on Instagram asks for money. The email list is the only algorithm-free channel; that's where the relationship lives.
 
 ## 8. Metrics that matter (review monthly, not daily)
 
 | Metric | Why it counts |
 |---|---|
-| Saves + shares per post | The algorithm's discovery signals |
-| Profile visits | Post → character interest |
+| Saves + shares per post | Discovery signals — is the insight worth keeping? |
+| Profile visits | Post → person interest |
 | Link-in-bio clicks | The only number connected to an owned asset |
 | Weekly posting streak | Consistency is the strategy |
 
-Follower count is reported, never optimized for.
-
 ## 9. Open items ([FILL] before they block work)
 
-- [ ] Character bible (design, personality, catchphrases, banned traits)
-- [ ] Pretzelita visual identity: palette, type, logo — the cover template ships with **provisional placeholder tokens, clearly marked**; replace them when the identity is locked
-- [ ] Link-in-bio destination URL (owned page)
-- [ ] Audience definition confirmed
-- [ ] Content pillars approved (§4)
-- [ ] Handle / bio copy for the account itself
+- [ ] Language policy (§3): English-first vs bilingual captions
+- [ ] Pillars approved (§4)
+- [ ] Exact link-in-bio landing page (a page worth landing on — not the homepage if a better capture page exists)
+- [ ] Cover template fonts synced with `src/styles/tokens.css` from the website repo (template ships with the confirmed green anchor + flagged font placeholders)
+- [ ] Instagram bio copy for @prihisol
+- [ ] Monetization skill updated with the new Instagram rule (see doctrine note above)

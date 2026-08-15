@@ -1,4 +1,4 @@
-post_id,publish_date,pillar,kicker,title,episode,img,caption_file,caption_status,render_status,notes
-001,2026-08-24,episodios,EPISODIO,Pretzelita descubre el lunes,EP. 001,,drafts/2026-08-24_001_caption_v1.md,draft,pending,"Structure demo from caption skeleton — replace once character bible exists"
-002,2026-08-31,episodios,EPISODIO,,EP. 002,,,idea,pending,""
-003,2026-09-07,mundo,EL MUNDO DE PRETZELITA,,EP. 003,,,idea,pending,"Pillar not yet approved — see strategy brief §4"
+post_id,publish_date,pillar,kicker,title,img,caption_file,caption_status,render_status,notes
+001,2026-08-24,la-idea,The idea,AI on a broken process is just a faster broken process.,,drafts/2026-08-24_001_caption_v1.md,draft,pending,"Structure demo from the caption skeleton — review before treating as publishable"
+002,2026-08-31,mental-movie,Mental movie,,,,idea,pending,"One mental-movie post max per week"
+003,2026-09-07,anthropologist,The anthropologist's eye,,,,idea,pending,"Pillar names pending approval — see strategy brief §4"

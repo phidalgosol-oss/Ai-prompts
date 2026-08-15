@@ -1,60 +1,70 @@
-# Caption Skeleton — Pretzelita Instagram
+# Caption Skeleton — @prihisol (professional brand)
 
-One structure, every caption. Fill the slots; never rearrange them. Spanish-first — English only where it lives naturally inside a joke or a term.
+One structure, every caption. It is her LinkedIn voice compressed for Instagram: shorter, same DNA. English-first until the language policy in the brief §3 is decided.
 
 ---
 
 ## The skeleton
 
 ```
-[GANCHO — first line, ≤125 characters]
-Visible before "more". Must work standing alone. In Pretzelita's voice,
-never a generic hook formula.
+[HOOK — first line, ≤125 characters]
+Visible before "more". Her register, not a hook formula: a short punchy
+fragment, a confession, or the sharp version of the idea.
+("Ten years ago my job was cloud." / "Gone. The headache is gone.")
 
-[HISTORIA — 2 to 5 short lines]
-The moment of the episode. Present tense. Character voice throughout.
-Line breaks between beats. No hashtags here, no selling, no humans.
+[STORY → INSIGHT — 3 to 8 short lines]
+One concrete moment or observation → the professional lesson.
+Her rhythm: short fragments, line breaks between beats, an honest aside
+allowed ("Lol", "I'm not a saint... I'm just trying").
+Instagram length: half a LinkedIn post, not a whole one.
 
-[PREGUNTA — exactly one]
-One question the audience answers from their own life, tied to the
-episode's situation. This is the comment driver.
+[EVIDENCE — optional, 1 to 3 arrow bullets]
+→ Only real, attributed research (MIT, BCG, McKinsey, Gartner, IDC…).
+Never an invented number. Skip entirely when the post is story-led.
 
-[CTA — one line, only when the post links out]
-Toward the owned asset only ("link en la bio"), phrased in-world.
-Most posts have NO CTA — discovery posts just end on the question.
-Never a price, never "compra", never an external platform.
+[CLOSE — one line]
+A reflective one-liner or ONE open question. Never a salesy CTA.
+("The end?" / "You decide." / "Sounds familiar?")
+When the post links out: one quiet line toward the owned asset
+("the longer version lives at the link in bio") — most posts don't.
 
-[HASHTAGS — 3 to 8, after one blank line]
-Small, specific Spanish-language tags over huge generic ones.
-Keep a reusable base set + 1–3 episode-specific tags.
+[HASHTAGS — 3 to 5, after one blank line]
+Instagram needs a few for discovery even though her style is nearly
+hashtag-free. Small and specific, no #ai #tech #motivation soup.
 
 [ALT — image alt text, one sentence]
-What is literally in the image, plain Spanish. Written for a person
-using a screen reader, not for the algorithm.
+What is literally in the image, plain language, written for a person
+using a screen reader — not for the algorithm.
 ```
 
 ## Rules that override everything
 
-1. **Pretzelita speaks; Priscilla doesn't.** No creator-voice asides, no "les cuento que…" from a human narrator.
-2. **Never a checkout.** No prices, offers, discounts, or product mentions. The only link destination is the owned site/email list.
-3. **One question per caption.** Two questions = zero answers.
-4. **Character facts come from the character bible.** If the bible doesn't cover it yet (`[FILL]` in the strategy brief), the line is a *proposal* flagged for Priscilla, not canon.
+1. **Her voice, dosed for Instagram.** Signature devices welcome — mental movie (max one per week), personal story → insight, the anthropologist lens, ALL CAPS for one word, ellipses for pacing. What never appears: corporate buzzword soup, emoji-bullet listicles, hype without evidence, doom without empathy.
+2. **Never a checkout.** No prices, offers, or enrollment pushes. Only link destination: the owned site/email list.
+3. **DxVida = evidence, not promotion.** "I'm living this as a founder" is fine; features, pitches, and links are not.
+4. **One question maximum per caption.** Two questions = zero answers.
+5. **Voice blends apply.** If she directs a mix ("40% my voice, 40% Omdia, 20% empathy"), follow the voice skill's blending protocol; default is 70% her voice, 20% evidence, 10% empathy.
 
-## Worked example (structure demo — episode content is placeholder until the character bible exists)
+## Worked example (structure demo — replace with a real post)
 
 ```
-Pretzelita descubrió el lunes. No le gustó.                    ← GANCHO
+AI on a broken process is just a faster broken process.          ← HOOK
 
-Sonó la alarma.
-La apagó con dignidad.
-La segunda alarma no recibió el mismo respeto.                  ← HISTORIA
+We didn't fix the intake form.
+We automated it.
+Now the wrong data arrives instantly.
+Different speed. Same Frankenstein.
+The fix was never technical. It was one honest conversation
+about who owns the process. We kept avoiding it.                  ← STORY → INSIGHT
 
-¿Cuántas alarmas necesitás vos para ser persona?                ← PREGUNTA
+→ MIT: 95% of GenAI pilots show no P&L impact — most automate
+  around the problem instead of through it.                       ← EVIDENCE
 
-#pretzelita #humorencomic #lunes #comicenespañol               ← HASHTAGS
+Which broken process is your AI politely accelerating?            ← CLOSE
 
-ALT: Caricatura de Pretzelita tapándose con una manta mientras
-un despertador suena en la mesa de noche.                       ← ALT
+#aistrategy #futureofwork #digitaltransformation                  ← HASHTAGS
+
+ALT: Editorial quote card on a warm cream background with the
+words "AI on a broken process is just a faster broken process"
+in deep green type.                                               ← ALT
 ```
-
-> Register note: the example uses **vos**; Spanish register (tú/vos) is still an open item in the strategy brief — confirm before publishing.

@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 /**
- * Pretzelita cover renderer — v1
+ * @prihisol cover renderer — v1
  *
  * Reads 2026-08-15_instagram_posts_v1.csv, opens the cover template in
  * headless Chromium, and screenshots a 1080×1350 PNG per post into renders/.
@@ -85,8 +85,7 @@ for (const p of posts) {
   const params = new URLSearchParams();
   if (p.kicker) params.set("kicker", p.kicker);
   params.set("title", p.title);
-  if (p.episode) params.set("episode", p.episode);
-  if (p.img) params.set("img", p.img); // path relative to this folder, e.g. photos/ep001.png
+  if (p.img) params.set("img", p.img); // path relative to this folder, e.g. photos/berlin-talk.jpg
 
   const url = pathToFileURL(TEMPLATE_PATH).href + "?" + params.toString();
   await page.goto(url, { waitUntil: "networkidle" });
