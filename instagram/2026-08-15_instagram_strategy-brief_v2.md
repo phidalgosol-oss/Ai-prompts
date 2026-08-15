@@ -65,9 +65,20 @@ What that text establishes as canon:
 ## 7. Story bank ([FILL] — grows over time, agents draw only from here for personal facts)
 
 Approved true material to build from:
-- Years of moving country to country; 2024 → the Camino de Santiago (the canonical reel).
-- Costa Rica: her grandfather building an electric plant on a mountain — approved story.
-- [FILL] — family stories, childhood rituals, food, places, recurring characters (mamá, abuela…?) as Priscilla approves them. Agents may PROPOSE story ideas, but only stories she confirms enter the bank.
+
+**The migration timeline (confirmed by Priscilla, 2026-08-15):**
+- Costa Rica → **France, from 2009**
+- **Czech Republic, 2011–2015**
+- Back home: **Microsoft Costa Rica** (between the two Czech chapters)
+- **Czech Republic again, 2020–2024**
+- **Germany, 2024 → now** (Dresden)
+- **2024: the Camino de Santiago** — walked to integrate the latest move (the canonical reel)
+
+**Family & childhood:**
+- Her grandfather built an electric plant on a mountain in Costa Rica — approved story.
+
+**Growing ([FILL] — interview in progress):**
+- Family characters, childhood rituals, food, places, the stories inside each country chapter — as Priscilla approves them. Agents may PROPOSE story ideas, but only stories she confirms enter the bank.
 
 ## 8. The quiet funnel
 
