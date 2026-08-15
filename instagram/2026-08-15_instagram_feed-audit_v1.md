@@ -1,14 +1,16 @@
 # Feed Audit — @prihisol (v1, framework + worksheet)
 
-Goal: bring the EXISTING feed in line with the new identity (strategy brief §1–3) — organize what's there, edit what needs editing, archive what's too much. The Camino reel is the north star; the feed should read as one person: whimsical, nostalgic, funny, Latina, real.
+Goal (per Priscilla, 2026-08-15): **make the EXISTING feed better — reorganize it and standardize the look and feel. No new captions.** The Camino reel is the north star; the feed should read as one person: whimsical, nostalgic, funny, Latina, real.
+
+Scope: pin / keep / archive decisions + visual cohesion (grid rhythm, highlight covers, bio). Caption rewrites are OUT of scope unless she asks later.
 
 **Status: waiting on the feed inventory.** Claude can't see Instagram from the pipeline environment, and account actions (edit caption / archive / pin) can only be done logged in as Priscilla. This file makes the audit a 30-minute job the moment the inventory exists.
 
 ## Getting the feed into the pipeline (pick ONE)
 
-1. **Best: Instagram data export.** Accounts Center → Your information and permissions → Download your information → select "Posts" (JSON or HTML, media optional). Drop the export into `feed-export/` here — Claude reads it and pre-fills the worksheet below with a verdict per post.
-2. **Fast: screenshots.** Screenshot the profile grid (scroll the whole feed) + screenshots of any captions you're unsure about. Drop them in `feed-export/`.
-3. **Manual: the worksheet.** Fill the table below yourself from your phone, one row per post — Claude then does verdict + rewrite passes.
+1. **Fastest: screenshots pasted into the Claude chat.** A few scrolls of the profile grid + the bio. Claude reads the images and returns per-post verdicts and the grid plan.
+2. **Complete: Instagram data export.** Accounts Center → Your information and permissions → Download your information → select "Posts" (JSON or HTML, media optional). Drop the export into `feed-export/` — Claude pre-fills the worksheet with a verdict per post.
+3. **Manual: the worksheet.** Fill the table below from your phone, one row per post.
 
 ## The verdicts (one per post)
 
