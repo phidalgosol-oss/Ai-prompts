@@ -69,12 +69,14 @@ Approved true material to build from:
 **The migration timeline (confirmed by Priscilla, 2026-08-15):**
 - Costa Rica → **France, from 2009**
 - **Czech Republic, 2011–2015**
+  - within it: **Catania, Italy — 6 months, February–July 2012**
 - Back home: **Microsoft Costa Rica** (between the two Czech chapters)
 - **Czech Republic again, 2020–2024**
 - **Germany, 2024 → now** (Dresden)
 - **2024: the Camino de Santiago** — walked to integrate the latest move (the canonical reel)
 
 **Family & childhood:**
+- **Main characters (confirmed): her mom, her brother, her cousins, her friends.** They may appear in @prihisol content. (Names/nicknames and any limits per person: [FILL] — ask before using a real name or a recognizable photo of any of them.)
 - Her grandfather built an electric plant on a mountain in Costa Rica — approved story.
 
 **Growing ([FILL] — interview in progress):**
