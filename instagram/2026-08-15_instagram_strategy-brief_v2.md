@@ -39,7 +39,7 @@ What that text establishes as canon:
 ## 3. Content pillars (proposed from her own words — confirm, then remove this note)
 
 1. **Movimiento & nostalgia** — migration, life chapters, the Camino, places that no longer fit, places that finally do. Reels lean here: nostalgic footage, reflective voiceover.
-2. **Cultura & familia** — Costa Rica, family stories, traditions, food, the grandmother-tongue of everyday rituals; DACH/Europe seen through Latina eyes, with affection and comedy.
+2. **Cultura & familia** — the family she and her husband are building together is the heart of this pillar: their everyday scenes, the cultural mix at home, the moves survived as a team. Around them: Costa Rica, her mom, her brother, cousins, friends, traditions, food; DACH/Europe seen through Latina eyes, with affection and comedy.
 3. **La Priscilla real** — funny, beautiful, imperfect: the everyday absurdities, self-deprecating humor, real life without filter-perfection.
 4. **Latina power** — pride, presence, the exotic-and-owning-it energy of her personal photos; women who take up space. Celebration, not lecture.
 
@@ -76,7 +76,9 @@ Approved true material to build from:
 - **2024: the Camino de Santiago** — walked to integrate the latest move (the canonical reel)
 
 **Family & childhood:**
-- **Main characters (confirmed): her mom, her brother, her cousins, her friends.** They may appear in @prihisol content. (Names/nicknames and any limits per person: [FILL] — ask before using a real name or a recognizable photo of any of them.)
+- **MAIN ACTOR (confirmed 2026-08-15): her husband — and the family they are together.** The couple/their shared life is the center of gravity of @prihisol content: the moves, the everyday scenes, the cultural mix at home.
+- **Supporting main characters (confirmed): her mom, her brother, her cousins, her friends.**
+- All of them may appear in @prihisol content — but names/nicknames, faces, and per-person limits are [FILL]: ask before using a real name or a recognizable photo of anyone but Priscilla herself.
 - Her grandfather built an electric plant on a mountain in Costa Rica — approved story.
 
 **Growing ([FILL] — interview in progress):**
