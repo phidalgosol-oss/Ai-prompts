@@ -1,0 +1,610 @@
+<title>Traction Board</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=Archivo:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap">
+
+<style>
+  :root {
+    /* Anchored to her existing brand system: deep forest green + warm neutral */
+    --verde:      #1B4D3E;
+    --verde-lift: #2A6B56;
+    --paper:      #F4F0E6;
+    --surface:    #FBF8F1;
+    --surface-2:  #EFEADC;
+    --ink:        #22261F;
+    --ink-soft:   #5C6157;
+    --rule:       #D9D2C0;
+
+    /* Lane colors — each also carries a glyph + label, never hue alone */
+    --lane-tester:  #A4472B;
+    --lane-connect: #2C5F72;
+    --lane-content: #1B4D3E;
+    --lane-community:#6B3F63;
+    --lane-data:    #856612;
+
+    --ok:      #2F6B45;
+    --warn:    #8A6A16;
+    --crit:    #A4472B;
+
+    --font-display: "Fraunces", Georgia, "Times New Roman", serif;
+    --font-body: "Archivo", "Helvetica Neue", Arial, sans-serif;
+    --font-mono: "IBM Plex Mono", ui-monospace, "SFMono-Regular", Menlo, monospace;
+
+    --maxw: 1240px;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --verde:      #6FBF9F;
+      --verde-lift: #8ED6B8;
+      --paper:      #14170F;
+      --surface:    #1C2018;
+      --surface-2:  #262B21;
+      --ink:        #ECE7D8;
+      --ink-soft:   #A2A695;
+      --rule:       #3A3F33;
+
+      --lane-tester:  #E08A66;
+      --lane-connect: #7FB4CA;
+      --lane-content: #6FBF9F;
+      --lane-community:#C08FB8;
+      --lane-data:    #D6AC48;
+
+      --ok:      #7FC79B;
+      --warn:    #D6AC48;
+      --crit:    #E08A66;
+    }
+  }
+
+  :root[data-theme="dark"] {
+    --verde:      #6FBF9F;
+    --verde-lift: #8ED6B8;
+    --paper:      #14170F;
+    --surface:    #1C2018;
+    --surface-2:  #262B21;
+    --ink:        #ECE7D8;
+    --ink-soft:   #A2A695;
+    --rule:       #3A3F33;
+
+    --lane-tester:  #E08A66;
+    --lane-connect: #7FB4CA;
+    --lane-content: #6FBF9F;
+    --lane-community:#C08FB8;
+    --lane-data:    #D6AC48;
+
+    --ok:      #7FC79B;
+    --warn:    #D6AC48;
+    --crit:    #E08A66;
+  }
+
+  * { box-sizing: border-box; }
+
+  body {
+    margin: 0;
+    background: var(--paper);
+    color: var(--ink);
+    font-family: var(--font-body);
+    font-size: 16px;
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  .wrap {
+    max-width: var(--maxw);
+    margin: 0 auto;
+    padding: 48px 24px 96px;
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+  }
+
+  .label {
+    font-family: var(--font-mono);
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: var(--ink-soft);
+  }
+
+  /* ---------- masthead ---------- */
+  header { display: flex; flex-direction: column; gap: 18px; }
+
+  .titlebar {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    gap: 24px;
+    flex-wrap: wrap;
+    border-bottom: 2px solid var(--verde);
+    padding-bottom: 16px;
+  }
+
+  h1 {
+    font-family: var(--font-display);
+    font-size: clamp(38px, 6vw, 62px);
+    font-weight: 600;
+    line-height: 1;
+    margin: 0;
+    color: var(--verde);
+    text-wrap: balance;
+    letter-spacing: -0.015em;
+  }
+
+  .dateline { text-align: right; }
+  .dateline .wk {
+    font-family: var(--font-mono);
+    font-size: 13px;
+    color: var(--ink);
+    font-weight: 600;
+  }
+
+  .bottleneck {
+    background: var(--surface);
+    border: 1px solid var(--rule);
+    border-left: 5px solid var(--crit);
+    padding: 18px 22px;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+  }
+  .bottleneck p {
+    margin: 0;
+    font-family: var(--font-display);
+    font-size: clamp(18px, 2.4vw, 24px);
+    line-height: 1.3;
+    text-wrap: balance;
+  }
+
+  /* ---------- scoreboard ---------- */
+  .score {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    gap: 2px;
+    background: var(--rule);
+    border: 1px solid var(--rule);
+  }
+  .tile {
+    background: var(--surface);
+    padding: 18px 20px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+  .tile .n {
+    font-family: var(--font-display);
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 1;
+    font-variant-numeric: tabular-nums;
+    color: var(--ink);
+  }
+  .tile .n.unknown { font-size: 22px; color: var(--ink-soft); font-weight: 400; font-style: italic; padding-top: 14px; }
+  .tile .goal { font-family: var(--font-mono); font-size: 11px; color: var(--ink-soft); }
+  .bar { height: 4px; background: var(--surface-2); position: relative; }
+  .bar span { position: absolute; inset: 0 auto 0 0; background: var(--verde); }
+
+  /* ---------- week grid ---------- */
+  section { display: flex; flex-direction: column; gap: 16px; }
+
+  h2 {
+    font-family: var(--font-display);
+    font-size: 26px;
+    font-weight: 600;
+    margin: 0;
+    color: var(--ink);
+    letter-spacing: -0.01em;
+  }
+  .sectionhead { display: flex; justify-content: space-between; align-items: baseline; gap: 16px; flex-wrap: wrap; border-bottom: 1px solid var(--rule); padding-bottom: 10px; }
+  .sectionhead p { margin: 0; color: var(--ink-soft); font-size: 14px; max-width: 62ch; }
+
+  .scroller { overflow-x: auto; padding-bottom: 6px; }
+
+  .week {
+    display: grid;
+    grid-template-columns: repeat(7, minmax(168px, 1fr));
+    gap: 2px;
+    background: var(--rule);
+    border: 1px solid var(--rule);
+    min-width: 900px;
+  }
+  .day { background: var(--surface); display: flex; flex-direction: column; }
+  .day.rest { background: var(--surface-2); }
+  .dayhead {
+    padding: 12px 14px 10px;
+    border-bottom: 1px solid var(--rule);
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 8px;
+  }
+  .dayhead .d { font-family: var(--font-mono); font-size: 11px; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; }
+  .dayhead .t { font-family: var(--font-mono); font-size: 11px; color: var(--ink-soft); font-variant-numeric: tabular-nums; }
+  .blocks { padding: 10px; display: flex; flex-direction: column; gap: 10px; flex: 1; }
+
+  .block {
+    border-left: 4px solid var(--lane);
+    background: var(--surface-2);
+    padding: 10px 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+  }
+  .block .lane {
+    font-family: var(--font-mono);
+    font-size: 10px;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--lane);
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+  .block .act { font-size: 14px; font-weight: 600; line-height: 1.35; }
+  .block .det { font-size: 12.5px; color: var(--ink-soft); line-height: 1.4; }
+  .block .out {
+    font-family: var(--font-mono);
+    font-size: 10px;
+    letter-spacing: 0.06em;
+    color: var(--ink-soft);
+    border-top: 1px dotted var(--rule);
+    padding-top: 6px;
+  }
+  .block.done { opacity: 0.55; }
+  .block.done .act { text-decoration: line-through; }
+
+  .l-tester   { --lane: var(--lane-tester); }
+  .l-connect  { --lane: var(--lane-connect); }
+  .l-content  { --lane: var(--lane-content); }
+  .l-community{ --lane: var(--lane-community); }
+  .l-data     { --lane: var(--lane-data); }
+
+  .auto {
+    background: transparent;
+    border: 1px dashed var(--rule);
+    border-left: 4px solid var(--verde-lift);
+  }
+  .auto .act { font-weight: 500; font-style: italic; }
+
+  /* ---------- cycle strip ---------- */
+  .cycle {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 2px;
+    background: var(--rule);
+    border: 1px solid var(--rule);
+  }
+  .phase { background: var(--surface); padding: 20px; display: flex; flex-direction: column; gap: 10px; }
+  .phase.now { background: var(--surface-2); box-shadow: inset 0 3px 0 var(--verde); }
+  .phase h3 { font-family: var(--font-display); font-size: 19px; margin: 0; font-weight: 600; }
+  .phase ul { margin: 0; padding-left: 17px; display: flex; flex-direction: column; gap: 5px; }
+  .phase li { font-size: 13.5px; color: var(--ink-soft); line-height: 1.45; }
+  .phase .out { font-family: var(--font-mono); font-size: 10.5px; letter-spacing: 0.06em; color: var(--ink); border-top: 1px solid var(--rule); padding-top: 8px; }
+
+  /* ---------- two-col ---------- */
+  .cols { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 28px; }
+  .card { background: var(--surface); border: 1px solid var(--rule); padding: 22px; display: flex; flex-direction: column; gap: 14px; }
+  .card h3 { font-family: var(--font-display); font-size: 20px; margin: 0; font-weight: 600; }
+
+  .quota { display: flex; flex-direction: column; gap: 0; }
+  .quota li {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 14px;
+    padding: 9px 0;
+    border-bottom: 1px dotted var(--rule);
+    font-size: 14px;
+  }
+  .quota li:last-child { border-bottom: none; }
+  .quota .q { font-family: var(--font-mono); font-weight: 600; font-size: 13px; white-space: nowrap; font-variant-numeric: tabular-nums; }
+  ul.quota { list-style: none; margin: 0; padding: 0; }
+
+  .rules { margin: 0; padding: 0; list-style: none; display: flex; flex-direction: column; gap: 11px; }
+  .rules li { font-size: 14px; line-height: 1.5; padding-left: 20px; position: relative; color: var(--ink); }
+  .rules li::before { content: ""; position: absolute; left: 0; top: 8px; width: 9px; height: 9px; background: var(--verde); }
+  .rules li b { font-weight: 700; }
+  .rules li.no::before { background: var(--crit); }
+
+  /* ---------- legend ---------- */
+  .legend { display: flex; flex-wrap: wrap; gap: 10px 22px; align-items: center; }
+  .key { display: flex; align-items: center; gap: 8px; font-family: var(--font-mono); font-size: 11px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--ink-soft); }
+  .key i { width: 14px; height: 14px; background: var(--k); display: inline-block; }
+
+  footer { border-top: 1px solid var(--rule); padding-top: 18px; color: var(--ink-soft); font-size: 13px; display: flex; flex-direction: column; gap: 6px; }
+  a { color: var(--verde); }
+  a:focus-visible, .block:focus-visible { outline: 2px solid var(--verde); outline-offset: 3px; }
+
+  @media (max-width: 640px) {
+    .wrap { padding: 32px 16px 72px; gap: 36px; }
+  }
+</style>
+
+<div class="wrap">
+
+  <header>
+    <div class="titlebar">
+      <h1>Traction Board</h1>
+      <div class="dateline">
+        <div class="label">Operating week</div>
+        <div class="wk">01 &middot; 24–30 AUG 2026</div>
+      </div>
+    </div>
+
+    <div class="bottleneck">
+      <div class="label" style="color: var(--crit)">The bottleneck</div>
+      <p>Nothing converts attention into the ecosystem yet — tester recruitment has not started, so every other metric is downstream of a funnel that isn't running.</p>
+    </div>
+  </header>
+
+  <section>
+    <div class="sectionhead">
+      <h2>Scoreboard</h2>
+      <p>The only numbers that count. Posts published is deliberately not one of them.</p>
+    </div>
+    <div class="score">
+      <div class="tile">
+        <div class="label">Testers contacted</div>
+        <div class="n">0</div>
+        <div class="bar"><span style="width:0%"></span></div>
+        <div class="goal">Week goal 10 · cohort cap 30</div>
+      </div>
+      <div class="tile">
+        <div class="label">Testing now</div>
+        <div class="n">0</div>
+        <div class="bar"><span style="width:0%"></span></div>
+        <div class="goal">50 engaged &gt; 500 passive</div>
+      </div>
+      <div class="tile">
+        <div class="label">Feedback collected</div>
+        <div class="n">0</div>
+        <div class="bar"><span style="width:0%"></span></div>
+        <div class="goal">Every session → quotes DB</div>
+      </div>
+      <div class="tile">
+        <div class="label">Advocates</div>
+        <div class="n">0</div>
+        <div class="bar"><span style="width:0%"></span></div>
+        <div class="goal">Consented social proof</div>
+      </div>
+      <div class="tile">
+        <div class="label">Email list</div>
+        <div class="n unknown">unknown</div>
+        <div class="bar"><span style="width:0%"></span></div>
+        <div class="goal">Drop the number in growth/data/</div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="sectionhead">
+      <h2>The week, combined</h2>
+      <p>Every lane on one grid. Roughly 4½ hours of her time — sized for an over-committed operator, not a content team.</p>
+    </div>
+
+    <div class="scroller">
+      <div class="week">
+
+        <div class="day">
+          <div class="dayhead"><span class="d">Mon</span><span class="t">55 min</span></div>
+          <div class="blocks">
+            <div class="block auto">
+              <div class="lane">⚙ Automatic · 07:05</div>
+              <div class="act">Growth Routine fires</div>
+              <div class="det">Research, funnel update, next week's board — committed and pushed before she wakes.</div>
+              <div class="out">Needs nothing from her</div>
+            </div>
+            <div class="block l-tester">
+              <div class="lane">◆ Testers</div>
+              <div class="act">Warm invites — batch 1 of 5</div>
+              <div class="det">Personalised ES/EN note per person. Replace every bracket.</div>
+              <div class="out">→ testers contacted</div>
+            </div>
+            <div class="block l-connect">
+              <div class="lane">● Connections</div>
+              <div class="act">3 substantive comments</div>
+              <div class="det">Tier-1 targets. A real thought only she could add — never "great post".</div>
+              <div class="out">→ visibility before any ask</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="day">
+          <div class="dayhead"><span class="d">Tue</span><span class="t">40 min</span></div>
+          <div class="blocks">
+            <div class="block l-content done">
+              <div class="lane">▲ Content</div>
+              <div class="act">LinkedIn founder story</div>
+              <div class="det">Already published — this slot now belongs to the replies.</div>
+              <div class="out">✓ done</div>
+            </div>
+            <div class="block l-content">
+              <div class="lane">▲ Content</div>
+              <div class="act">Work the comments</div>
+              <div class="det">Answer every comment with a real sentence; move warm ones to DM.</div>
+              <div class="out">→ conversations → testers</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="day">
+          <div class="dayhead"><span class="d">Wed</span><span class="t">45 min</span></div>
+          <div class="blocks">
+            <div class="block l-community">
+              <div class="lane">■ Community</div>
+              <div class="act">Answer 2 real import threads</div>
+              <div class="det">Reddit / ES importador groups. Useful answer in public, no pitch attached.</div>
+              <div class="out">→ credibility + tester pool</div>
+            </div>
+            <div class="block l-data">
+              <div class="lane">✦ Intelligence</div>
+              <div class="act">Harvest exact quotes</div>
+              <div class="det">Copy the sentences people actually write into the language DB.</div>
+              <div class="out">→ copy written in their words</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="day">
+          <div class="dayhead"><span class="d">Thu</span><span class="t">50 min</span></div>
+          <div class="blocks">
+            <div class="block l-tester">
+              <div class="lane">◆ Testers</div>
+              <div class="act">Warm invites — batch 2 of 5</div>
+              <div class="det">Second half of the ten. Never more than ten a week.</div>
+              <div class="out">→ testers contacted</div>
+            </div>
+            <div class="block l-connect">
+              <div class="lane">● Connections</div>
+              <div class="act">One guest / collab pitch</div>
+              <div class="det">ES business podcasts, Women AI First, Amela Club. Peer-to-peer, not fan mail.</div>
+              <div class="out">→ borrowed audience</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="day">
+          <div class="dayhead"><span class="d">Fri</span><span class="t">60 min</span></div>
+          <div class="blocks">
+            <div class="block l-tester">
+              <div class="lane">◆ Testers</div>
+              <div class="act">2 tester sessions · 20 min each</div>
+              <div class="det">Their real case. Five questions. Say nothing, let them struggle, write it down.</div>
+              <div class="out">→ feedback collected</div>
+            </div>
+            <div class="block l-data">
+              <div class="lane">✦ Intelligence</div>
+              <div class="act">Log verbatims + close the loop</div>
+              <div class="det">"You said X, we changed Y" — the cheapest loyalty there is.</div>
+              <div class="out">→ advocates</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="day">
+          <div class="dayhead"><span class="d">Sat</span><span class="t">30 min</span></div>
+          <div class="blocks">
+            <div class="block l-content">
+              <div class="lane">▲ Content</div>
+              <div class="act">@prihisol — only if it's fun</div>
+              <div class="det">Apply reel covers from the kit, or post one thing she actually wants to post. Publish only when she can stay 30 min to answer.</div>
+              <div class="out">→ saves, shares, DMs</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="day rest">
+          <div class="dayhead"><span class="d">Sun</span><span class="t">15 min</span></div>
+          <div class="blocks">
+            <div class="block l-data">
+              <div class="lane">✦ Intelligence</div>
+              <div class="act">Drop the numbers</div>
+              <div class="det">Whatever is real: list size, IG saves, replies, tester count → growth/data/</div>
+              <div class="out">→ Monday's board can see</div>
+            </div>
+            <div class="block auto">
+              <div class="lane">☾ Rest</div>
+              <div class="act">Nothing else</div>
+              <div class="det">A cadence she abandons in three weeks is worse than one she keeps for three years.</div>
+              <div class="out">Protected</div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="legend">
+      <span class="key" style="--k: var(--lane-tester)"><i></i>◆ Testers</span>
+      <span class="key" style="--k: var(--lane-connect)"><i></i>● Connections</span>
+      <span class="key" style="--k: var(--lane-content)"><i></i>▲ Content</span>
+      <span class="key" style="--k: var(--lane-community)"><i></i>■ Community</span>
+      <span class="key" style="--k: var(--lane-data)"><i></i>✦ Intelligence</span>
+      <span class="key" style="--k: var(--verde-lift)"><i></i>⚙ Runs itself</span>
+    </div>
+  </section>
+
+  <section>
+    <div class="sectionhead">
+      <h2>The four-week cycle</h2>
+      <p>The week above repeats, but its centre of gravity moves. One full turn takes a month and ends with proof she can show.</p>
+    </div>
+    <div class="cycle">
+      <div class="phase now">
+        <div class="label">Week 1 · now</div>
+        <h3>Warm strike</h3>
+        <ul>
+          <li>10 personal invites to her own network</li>
+          <li>Offer approved, templates ready</li>
+          <li>Comments before asks</li>
+        </ul>
+        <div class="out">Exit: 10 contacted</div>
+      </div>
+      <div class="phase">
+        <div class="label">Week 2</div>
+        <h3>Rooms she's in</h3>
+        <ul>
+          <li>Contribute in import + founder communities</li>
+          <li>First 5 verified nano/micro names</li>
+          <li>First guest pitches land</li>
+        </ul>
+        <div class="out">Exit: 5 community-sourced testers</div>
+      </div>
+      <div class="phase">
+        <div class="label">Week 3</div>
+        <h3>Listen hard</h3>
+        <ul>
+          <li>Tester sessions run in volume</li>
+          <li>Feature requests ranked</li>
+          <li>Language DB hits 30 verbatims</li>
+        </ul>
+        <div class="out">Exit: feedback → roadmap</div>
+      </div>
+      <div class="phase">
+        <div class="label">Week 4</div>
+        <h3>Turn them loud</h3>
+        <ul>
+          <li>Close the loop with every tester</li>
+          <li>Ask for quotes, intros, collabs</li>
+          <li>Month review: what moved, what dies</li>
+        </ul>
+        <div class="out">Exit: first consented social proof</div>
+      </div>
+    </div>
+  </section>
+
+  <div class="cols">
+    <div class="card">
+      <h3>Standing weekly quotas</h3>
+      <ul class="quota">
+        <li><span>Warm tester invites</span><span class="q">10 max</span></li>
+        <li><span>Tester sessions run</span><span class="q">2+</span></li>
+        <li><span>Community answers, no pitch</span><span class="q">2</span></li>
+        <li><span>Substantive comments, Tier 1</span><span class="q">3</span></li>
+        <li><span>Guest / collab pitches</span><span class="q">1</span></li>
+        <li><span>New verified creator names</span><span class="q">5</span></li>
+        <li><span>Verbatim quotes captured</span><span class="q">5+</span></li>
+        <li><span>Posts required</span><span class="q">0</span></li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h3>Rules that decide the close calls</h3>
+      <ul class="rules">
+        <li><b>Two useful answers before one ask.</b> Contribute in a community before recruiting from it.</li>
+        <li><b>Publish only when she can stay.</b> Thirty minutes of real replies beats a perfect caption — early conversation depth is the ranking signal that matters now.</li>
+        <li><b>Three good beats seven mediocre.</b> Daily filler can mark the account as low-engagement.</li>
+        <li><b>Nano before macro.</b> 1–10k creators reply to cold outreach at 20–30%; 1M accounts don't.</li>
+        <li class="no"><b>@prihisol never sells.</b> Not the course, not DxVida. Its job is trust.</li>
+        <li class="no"><b>No invented numbers, ever.</b> Unknown stays unknown until she measures it.</li>
+      </ul>
+    </div>
+  </div>
+
+  <footer>
+    <div><b>Evidence behind the rules:</b> Instagram 2026 ranking signals — shares, saves, early conversation velocity — <a href="https://later.com/blog/how-instagram-algorithm-works/">Later</a>, <a href="https://sproutsocial.com/insights/instagram-algorithm/">Sprout Social</a>, <a href="https://www.mirra.my/en/blog/instagram-algorithm-2026-complete-analysis">Mirra</a>. Creator tiers and response rates — <a href="https://www.digitalapplied.com/blog/influencer-marketing-2026-micro-nano-strategy">Digital Applied</a>, <a href="https://influenceflow.io/resources/influencer-outreach-best-practices-a-complete-2026-guide/">InfluenceFlow</a>. Tester sourcing split and cohort sizing — <a href="https://usersnap.com/blog/free-beta-users-for-beta-testing/">Usersnap</a>, <a href="https://www.eleken.co/blog-posts/how-to-find-beta-testers">Eleken</a>.</div>
+    <div>Board state: week 01 counters are real zeros, not placeholders. They move when she reports numbers into <span style="font-family: var(--font-mono)">growth/data/</span>.</div>
+  </footer>
+
+</div>

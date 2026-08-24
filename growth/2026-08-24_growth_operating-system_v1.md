@@ -58,4 +58,5 @@ A piece must accomplish at least one: recruit testers · start conversations · 
 
 - [ ] Instagram feed audit awaits her grid screenshots (env cannot reach instagram.com; account actions are hers alone).
 - [ ] Engagement data: no analytics access — she drops numbers/screenshots in `growth/data/` or the chat; the operator works with what's real, never guesses metrics.
-- [ ] DxVida tester funnel needs her yes on the offer to testers (what testers get — see funnel Step 3).
+- [x] DxVida tester offer APPROVED (2026-08-24): free beta access + real case analyzed + founder line + named early-supporter status; cohort cap 20–30.
+- [ ] Visual board: `growth/2026-08-24_growth_traction-board_v1.html` (published artifact) — regenerate weekly with the cycle.
