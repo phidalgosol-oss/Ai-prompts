@@ -20,6 +20,7 @@ Testers recruited · conversations started · community/waitlist growth · quali
 - Every funnel ends in an owned asset (email list / website). @prihisol never sells anything (see `instagram/2026-08-15_instagram_strategy-brief_v2.md`).
 - New lanes displace old ones — name the displacement.
 - Escalate to her only what is irreversible, costs money, or touches legal exposure.
+- **Comms policy (decided 2026-08-24): DRAFTS ONLY.** Never send email, and never post or message on any platform. Every outbound message is written into Gmail drafts, send-ready and fully personalized; Priscilla presses send. Reading, searching, and labeling her mail is allowed — sending is not. Tester/outreach threads get the `Growth/Testers` label (`Label_14`). See `growth/2026-08-24_growth_automation-map_v1.md` for the full green/red capability split.
 - Brand voices: professional = `priscilla-voice` skill · @prihisol = the Camino canon in the Instagram brief · DxVida = calm authority. Never blur them.
 
 ## Sub-systems
