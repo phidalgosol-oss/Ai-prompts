@@ -12,7 +12,12 @@ Harvested weekly by the growth Routine from: Reddit, LinkedIn comments, Facebook
 
 ## DxVida — import/export pains
 
-_(empty — first harvest scheduled; target: 10 verbatim quotes from import/export threads)_
+**Source note:** the first real entries came from Priscilla's own mailbox (futureSAX InnoStartBonus Call 15 jury feedback, relayed by Anika Lorenz). These are evaluator objections, not customer quotes — tagged as such. Private source: Gmail, not linkable.
+
+- "Erlösmodell schwer nachvollziehbar...wie ändert sich der Preis bei Sperrgut (Übermaße), Gefahrgut (brennbares Material / Flüssigkeiten) etc." — futureSAX jury via A. Lorenz, 2026-05-13, tag: objection, lane: dxvida
+- "Darstellung der Zustellanbieter und Aufstellung der Transportkosten bitte ausführlicher" — futureSAX jury via A. Lorenz, 2026-06-04, tag: objection, lane: dxvida
+
+**What these two say together:** the model is not disbelieved, it is *not yet legible* — pricing logic under edge cases (oversized, hazardous goods) and the transport-cost breakdown are where trust breaks. Every tester session must probe: *which number did you not believe, and why?*
 
 ## Course — AI-at-work fears & desires
 

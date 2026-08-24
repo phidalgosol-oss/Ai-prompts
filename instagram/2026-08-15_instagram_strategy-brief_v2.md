@@ -78,7 +78,7 @@ Approved true material to build from:
 **Family & childhood:**
 - **MAIN ACTOR (confirmed 2026-08-15): her husband — and the family they are together.** The couple/their shared life is the center of gravity of @prihisol content: the moves, the everyday scenes, the cultural mix at home.
 - **About him (confirmed):** they met in **August 2022**. He is **German**, a **computer scientist who paints** — "a real Leonardo da Vinci," beautiful in every aspect. **They love cooking together** (cooking scenes = prime recurring content: Costa Rica meets Germany at the stove).
-- **How he appears on @prihisol (confirmed): face + name.** He appears fully — face in photos/reels, real name in captions. (His name itself: [FILL] — record it the first time Priscilla uses it in a draft.)
+- **How he appears on @prihisol (confirmed): face + name.** He appears fully — face in photos/reels, real name in captions. (His name — **Michael Döcke** — derived from Priscilla's own correspondence 2026-08-24, where he also appears as **DxVida's co-founder**; confirm spelling and how she wants him named before it appears in a published caption.)
 - **Supporting main characters (confirmed): her mom, her brother, her cousins, her friends.**
 - All of them may appear in @prihisol content — but names/nicknames, faces, and per-person limits are [FILL]: ask before using a real name or a recognizable photo of anyone but Priscilla herself.
 - Her grandfather built an electric plant on a mountain in Costa Rica — approved story.

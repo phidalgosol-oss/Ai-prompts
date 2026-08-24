@@ -16,6 +16,18 @@ Goal: a repeatable engine that turns strangers into **active testers → feedbac
 5. Female Founders (Europe's largest women-founder community) and peers ([female-founders.org](https://www.female-founders.org/), [community list](https://mean.ceo/startup-blog/tpost/european-female-founder-communities)).
 6. Her own warm network — ~26% of founders' testers come from it ([usersnap](https://usersnap.com/blog/free-beta-users-for-beta-testing/)): LinkedIn 11k, mentees, former colleagues, the course's future students.
 
+**Named warm candidates — derived from her own sent mail, 2026-08-24 (verify each before sending):**
+
+| Person | Why they fit | Status |
+|---|---|---|
+| **Alejandra Cáceres** (aleca084@…) | Sent Priscilla the full EU cosmetics registration procedure + COSING databases — she is living the exact problem DxVida solves. Warm ("Hola Pri"). | **DRAFT READY in Gmail** |
+| **Anika Lorenz** — futureSAX / InnoStartBonus | Gave DxVida its jury feedback; gateway to the Saxon founder network for tester intros. | **DRAFT READY in Gmail** |
+| **Tatiana Pererva** — SES Bonn | Was mid-conversation about expert support for the CR↔DE import/export line; invited a formal cooperation form. **Open loop — did Priscilla ever send the form?** | Needs her answer first |
+| **AHK Costa Rica** (direccion@ahk.cr) + **Ignacio García** | German–Costa Rican Chamber of Commerce; already cc'd on her SES thread. Institutional route to CR↔DE traders = dense tester pool. | Candidate |
+| **Nadja Dehne** — Silicon Saxony | She sent an Initiativbewerbung there in June. Ecosystem contact — but mixing a job application with a tester ask is awkward. | Hold |
+
+**Not tester targets (team/family):** Michael Döcke (husband, DxVida co-founder), edelsolis@… (her mother).
+
 **Tier C — generic beta channels (volume, lower fit):** BetaList, Product Hunt (Ship/launch), Beta Testers Hub, r/TestFlight-style beta subreddits ([eleken](https://www.eleken.co/blog-posts/how-to-find-beta-testers), [quoleady](https://www.quoleady.com/how-to-find-beta-testers/)).
 
 **Rule:** contribute visibly in a community before recruiting from it. Two useful answers before one ask.
