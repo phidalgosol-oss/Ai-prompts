@@ -35,12 +35,16 @@ Until then: sending happens in-session, when she's here.
 
 The first 10 invites go to real friends and former colleagues. Their power is that they are *personal*. An AI-written note sent to a close contact without her eyes on it risks the one asset she cannot rebuild — those relationships — to save about 15 minutes.
 
-**Recommended split (safe autonomy):**
+## DECIDED POLICY (Priscilla, 2026-08-24) — drafts only
 
-- **Warm network (first 10):** operator writes them straight into **Gmail drafts**, personalized, ready. She skims, hits send. ~15 seconds each, relationship risk ≈ 0.
-- **Cold / community / creator outreach:** operator sends directly once she has approved the target list. Low relationship risk, high volume value.
-- **Follow-ups, scheduling, confirmations, thank-yous, feedback requests, loop-closing:** operator sends directly. These are mechanical.
-- **Anything money, legal, or irreversible:** escalate to her. Always.
+**The operator never sends email. Every message is written into Gmail drafts; Priscilla presses send.**
+This applies to ALL categories — warm invites, cold/community outreach, follow-ups, scheduling, thank-yous, loop-closing. No exceptions, no "this one was mechanical".
+
+- Drafts are written fully personalized and send-ready: correct recipient, subject, body. Nothing for her to edit unless she wants to.
+- The operator may read, search, and label her mail (to track replies and keep the queue current) — reading is automated, sending is not.
+- Anything money, legal, or irreversible: escalate, never draft-and-assume.
+
+**Inbox triage — ACTIVE:** Gmail label `Growth/Testers` (dark green, `Label_14`) created 2026-08-24. Every tester/outreach thread gets labeled, so "checking comms" means opening one filtered view instead of a 20k-unread inbox.
 
 ## Her actual weekly load under this model
 
